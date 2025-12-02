@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { Trophy, Users, Clock, Play, SkipForward, X } from 'lucide-react';
 import io from 'socket.io-client';
 
-const SOCKET_URL = import.meta.env.VITE_API_URL || 'http://localhost:3001';
+const SOCKET_URL = import.meta.env.VITE_API_URL || 'https://quiz-platform-hozn.onrender.com';
 
 const HostInterface = ({ socket, onSwitchToPlayer }) => {
   const [gamePin, setGamePin] = useState(null);
